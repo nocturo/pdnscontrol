@@ -25,7 +25,7 @@
     </div>
     <ul ng-init="limit=500">
       <li ng-repeat="result in results | limitTo:limit">
-        <span ng-switch on="result.type">
+        <span ng-switch on="result.object_type">
           <span ng-switch-when="zone">
             <a href="./zone/{{result.zone_id}}">Zone <b>{{result.name}}</b></a>
           </span>
